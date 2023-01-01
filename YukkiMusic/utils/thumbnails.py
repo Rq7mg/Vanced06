@@ -94,7 +94,7 @@ async def gen_thumb(videoid):
         )
         draw.text(
             (600, 150),
-            "NOW PLAYING",
+            "OYNATILIYOR",
             fill="white",
             stroke_width=2,
             stroke_fill="white",
@@ -124,19 +124,19 @@ async def gen_thumb(videoid):
 
         draw.text(
             (600, 450),
-            f"Views : {views[:23]}",
+            f"İzlenme : {views[:23]}",
             (255, 255, 255),
             font=arial,
         )
         draw.text(
             (600, 500),
-            f"Duration : {duration[:23]} Mins",
+            f"Dakika : {duration[:23]} Mins",
             (255, 255, 255),
             font=arial,
         )
         draw.text(
             (600, 550),
-            f"Channel : {channel}",
+            f"Kanal : {channel}",
             (255, 255, 255),
             font=arial,
         )
