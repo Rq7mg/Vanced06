@@ -7,169 +7,169 @@
 #
 # All rights reserved.
 
-HELP_1 = """✅**<u>Admin Commands:</u>**
+HELP_1 = """✅**<u>Yönetici Komutları:</u>**
 
-**c** stands for channel play.
+**c**, kanal oynatma anlamına gelir.
 
-/pause or /cpause - Pause the playing music.
-/resume or /cresume- Resume the paused music.
-/mute or /cmute- Mute the playing music.
-/unmute or /cunmute- Unmute the muted music.
-/skip or /cskip- Skip the current playing music.
-/stop or /cstop- Stop the playing music.
-/shuffle or /cshuffle- Randomly shuffles the queued playlist.
-/seek or /cseek - Forward Seek the music to your duration
-/seekback or /cseekback - Backward Seek the music to your duration
-/restart - Restart bot for your chat .
-
-
-✅<u>**Specific Skip:**</u>
-/skip or /cskip [Number(example: 3)] 
-    - Skips music to a the specified queued number. Example: /skip 3 will skip music to third queued music and will ignore 1 and 2 music in queue.
-
-✅<u>**Loop Play:**</u>
-/loop or /cloop [enable/disable] or [Numbers between 1-10] 
-    - When activated, bot loops the current playing music to 1-10 times on voice chat. Default to 10 times.
-
-✅<u>**Auth Users:**</u>
-Auth Users can use admin commands without admin rights in your chat.
-
-/auth [Username] - Add a user to AUTH LIST of the group.
-/unauth [Username] - Remove a user from AUTH LIST of the group.
-/authusers - Check AUTH LIST of the group."""
+/pause veya /cpause - Çalan müziği duraklatın.
+/resume veya /cresume- Duraklatılan müziği devam ettirin.
+/mute veya /cmute- Çalan müziğin sesini kapatın.
+/unmute veya /cunmute- Sessize alınan müziğin sesini açın.
+/skip veya /cskip- Çalan müziği atla.
+/stop veya /cstop- Çalan müziği durdurun.
+/shuffle veya /cshuffle- Kuyruğa alınan çalma listesini rastgele karıştırır.
+/seek veya /cseek - Müziği kendi sürenize kadar iletin
+/seekback veya /cseekback - Geriye Müziği sürenize göre arayın
+/restart - Sohbetiniz için botu yeniden başlatın.
 
 
-HELP_2 = """✅<u>**Play Commands:**</u>
+✅<u>**Belirli Atlama:**</u>
+/skip veya /cskip [Sayı(örnek: 3)]
+    - Müziği belirtilen sıraya alınmış bir numaraya atlar. Örnek: /skip 3, müziği sıradaki üçüncü müziğe atlar ve sıradaki 1 ve 2 müziği yok sayar.
 
-Available Commands = play , vplay , cplay
+✅<u>**Döngü Oynatma:**</u>
+/loop veya /cloop [etkinleştir/devre dışı bırak] veya [1-10 arasındaki sayılar]
+    - Etkinleştirildiğinde, bot mevcut çalan müziği sesli sohbette 1-10 kez döngüye alır. Varsayılan olarak 10 kez.
 
-ForcePlay Commands = playforce , vplayforce , cplayforce
+✅<u>**Doğru Kullanıcılar:**</u>
+Kimlik Doğrulama Kullanıcılar, sohbetinizde yönetici hakları olmadan yönetici komutlarını kullanabilir.
 
-**c** stands for channel play.
-**v** stands for video play.
-**force** stands for force play.
-
-/play or /vplay or /cplay  - Bot will start playing your given query on voice chat or Stream live links on voice chats.
-
-/playforce or /vplayforce or /cplayforce -  **Force Play** stops the current playing track on voice chat and starts playing the searched track instantly without disturbing/clearing queue.
-
-/channelplay [Chat username or id] or [Disable] - Connect channel to a group and stream music on channel's voice chat from your group.
-
-
-✅**<u>Bot's Server Playlists:</u>**
-/playlist  - Check Your Saved Playlist On Servers.
-/deleteplaylist - Delete any saved music in your playlist
-/play  - Start playing Your Saved Playlist from Servers."""
+/auth [Kullanıcı adı] - Grubun AUTH LIST'ine bir kullanıcı ekleyin.
+/unauth [Kullanıcı adı] - Grubun AUTH LIST'inden bir kullanıcıyı kaldırır.
+/authusers - Grubun KİMLİK LİSTESİNİ kontrol et."""
 
 
-HELP_3 = """✅<u>**Bot Commands:**</u>
+HELP_2 = """✅<u>**Çalma Komutları:**</u>
 
-/stats - Get Top 10 Tracks Global Stats, Top 10 Users of bot, Top 10 Chats on bot, Top 10 Played in a chat etc etc.
+Mevcut Komutlar = play , vplay , cplay
 
-/sudolist - Check Sudo Users of Yukki Music Bot
+ForcePlay Komutları = playforce, vplayforce, cplayforce
 
-/lyrics [Music Name] - Searches Lyrics for the particular Music on web.
+**c**, kanal oynatma anlamına gelir.
+**v** video oynatma anlamına gelir.
+**force**, force play anlamına gelir.
 
-/song [Track Name] or [YT Link] - Download any track from youtube in mp3 or mp4 formats.
+/play veya /vplay veya /cplay - Bot, verilen sorguyu sesli sohbette oynatmaya veya sesli sohbetlerde canlı bağlantıları yayınlamaya başlar.
 
-/player -  Get a interactive Playing Panel.
+/playforce veya /vplayforce veya /cplayforce - **Force Play** sesli sohbette çalmakta olan parçayı durdurur ve sırayı bozmadan/temizlemeden aranan parçayı anında oynatmaya başlar.
 
-**c** stands for channel play.
+/channelplay [Sohbet kullanıcı adı veya kimliği] veya [Devre Dışı Bırak] - Kanalı bir gruba bağlayın ve grubunuzdan kanalın sesli sohbetinde müzik akışı yapın.
 
-/queue or /cqueue- Check Queue List of Music."""
 
-HELP_4 = """✅<u>**Extra  Commands:**</u>
-/start - Start the Music Bot.
-/help  - Get Commands Helper Menu with detailed explanations of commands.
-/ping- Ping the Bot and check Ram, Cpu etc stats of Bot.
+✅**<u>Bot'un Sunucu Oynatma Listeleri:</u>**
+/playlist - Sunucularda Kayıtlı Oynatma Listenizi Kontrol Edin.
+/deleteplaylist - Çalma listenizdeki kaydedilmiş tüm müzikleri silin
+/play - Kayıtlı Oynatma Listenizi Sunuculardan oynatmaya başlayın."""
 
-✅<u>**Group Settings:**</u>
-/settings - Get a complete group's settings with inline buttons
 
-🔗 **Options in Settings:**
+HELP_3 = """✅<u>**Bot Komutları:**</u>
 
-1️⃣ You can set **Audio Quality** you want to stream on voice chat.
+/stats - İlk 10 Parça Global İstatistiklerini, Bot'un İlk 10 Kullanıcısını, Bot'ta İlk 10 Sohbeti, Sohbette Oynanan İlk 10'u vb. alın.
 
-2️⃣ You can set **Video Quality** you want to stream on voice chat.
+/sudolist - Yukki Müzik Botunun Sudo Kullanıcılarını Kontrol Edin
 
-3️⃣ **Auth Users**:- You can change admin commands mode from here to everyone or admins only. If everyone, anyone present in you group will be able to use admin commands(like /skip, /stop etc)
+/lyrics [Müzik Adı] - Web'de belirli bir Müziğin Sözlerini arar.
 
-4️⃣ **Clean Mode:** When enabled deletes the bot's messages after 5 mins from your group to make sure your chat remains clean and good.
+/song [Parça Adı] veya [YT Bağlantısı] - Youtube'dan herhangi bir parçayı mp3 veya mp4 formatlarında indirin.
 
-5️⃣ **Command Clean** : When activated, Bot will delete its executed commands (/play, /pause, /shuffle, /stop etc) immediately.
+/player - Etkileşimli bir Oyun Paneli edinin.
 
-6️⃣ **Play Settings:**
+**c**, kanal oynatma anlamına gelir.
 
-/playmode - Get a complete play settings panel with buttons where you can set your group's play settings. 
+/queue veya /cqueue- Müzik Sıra Listesini Kontrol Et."""
 
-<u>Options in playmode:</u>
+HELP_4 = """✅<u>**Ek Komutlar:**</u>
+/start - Müzik Botunu başlatın.
+/help - Komutların ayrıntılı açıklamalarını içeren Komutlar Yardımcı Menüsünü edinin.
+/ping- Bot'a ping atın ve Bot'un Ram, Cpu vb. istatistiklerini kontrol edin.
 
-1️⃣ **Search Mode** [Direct or Inline] - Changes your search mode while you give /play mode. 
+✅<u>**Grup Ayarları:**</u>
+/ settings - Satır içi düğmelerle eksiksiz bir grubun ayarlarını alın
 
-2️⃣ **Admin Commands** [Everyone or Admins] - If everyone, anyone present in you group will be able to use admin commands(like /skip, /stop etc)
+🔗 **Ayarlardaki seçenekler:**
 
-3️⃣ **Play Type** [Everyone or Admins] - If admins, only admins present in group can play music on voice chat."""
+1️⃣ Sesli sohbette yayınlamak istediğiniz **Ses Kalitesini** ayarlayabilirsiniz.
 
-HELP_5 = """🔰**<u>ADD & REMOVE SUDO USERS :</u>**
-/addsudo [Username or Reply to a user]
-/delsudo [Username or Reply to a user]
+2️⃣ Sesli sohbette yayınlamak istediğiniz **Video Kalitesini** ayarlayabilirsiniz.
+
+3️⃣ **Auth Users**:- Yönetici komutları modunu buradan herkese veya yalnızca yöneticilere değiştirebilirsiniz. Eğer grubunuzdaki herkes yönetici komutlarını kullanabilecekse (/skip, /stop vb.)
+
+4️⃣ **Temizlik Modu:** Etkinleştirildiğinde, sohbetinizin temiz ve iyi kalmasını sağlamak için botun mesajlarını grubunuzdan 5 dakika sonra siler.
+
+5️⃣ **Komut Temizleme** : Etkinleştirildiğinde, Bot çalıştırdığı komutları (/play, /pause, /shuffle, /stop vb.) hemen siler.
+
+6️⃣ **Oyun Ayarları:**
+
+/playmode - Grubunuzun oynatma ayarlarını yapabileceğiniz düğmeler içeren eksiksiz bir oynatma ayarları paneli edinin.
+
+<u>Oyun modundaki seçenekler:</u>
+
+1️⃣ **Arama Modu** [Doğrudan veya Satır İçi] - /oynatma modunu verirken arama modunuzu değiştirir.
+
+2️⃣ **Yönetici Komutları** [Herkes veya Yöneticiler] - Grubunuzdaki herkes, herkes yönetici komutlarını kullanabilecekse (/skip, /stop vb.)
+
+3️⃣ **Çalma Türü** [Herkes veya Yöneticiler] - Yöneticiler ise, yalnızca grupta bulunan yöneticiler sesli sohbette müzik çalabilir."""
+
+HELP_5 = """🔰**<u>SUDO KULLANICILARINI EKLE VE KALDIR :</u>**
+/addsudo [Kullanıcı adı veya bir kullanıcıya yanıt]
+/ delsudo [Kullanıcı adı veya bir kullanıcıya cevap]
 
 🛃**<u>HEROKU:</u>**
-/usage - Dyno Usage.
+/use - Dyno Kullanımı.
 
-🌐**<u>CONFIG VARS:</u>**
-/get_var - Get a config var from Heroku or .env.
-/del_var - Delete any var on Heroku or .env.
-/set_var [Var Name] [Value] - Set a Var or Update a Var on heroku or .env. Seperate Var and its Value with a space.
+🌐**<u>AYARLANDIRMA DEĞİŞKENLERİ:</u>**
+/get_var - Heroku veya .env'den bir yapılandırma değişkeni alın.
+/del_var - Heroku veya .env'deki tüm değişkenleri silin.
+/set_var [Var Adı] [Değer] - Heroku veya .env'de bir Var Ayarlayın veya Bir Var Güncelleyin. Var ve Değerini bir boşlukla ayırın.
 
-🤖**<u>BOT COMMANDS:</u>**
-/reboot - Reboot your Bot. 
-/update - Update Bot.
-/speedtest - Check server speeds
-/maintenance [enable / disable] 
-/logger [enable / disable] - Bot logs the searched queries in logger group.
-/get_log [Number of Lines] - Get log of your bot from heroku or vps. Works for both.
-/autoend [enable|disable] - Enable Auto stream end after 3 mins if no one is listening.
+🤖**<u>BOT KOMUTLARI:</u>**
+/reboot - Botunuzu yeniden başlatın.
+/ update - Botu güncelle.
+/speedtest - Sunucu hızlarını kontrol edin
+/bakım [etkinleştir / devre dışı bırak]
+/logger [etkinleştir / devre dışı bırak] - Bot, aranan sorguları logger grubunda günlüğe kaydeder.
+/get_log [Satır Sayısı] - Botunuzun günlüğünü heroku veya vps'den alın. Her ikisi için de çalışır.
+/autoend [etkinleştir|devre dışı bırak] - Kimse dinlemiyorsa 3 dakika sonra Otomatik yayın bitişini etkinleştirin.
 
-📈**<u>STATS COMMANDS:</u>**
-/activevoice - Check active voice chats on bot.
-/activevideo - Check active video calls on bot.
-/stats - Check Bots Stats
+📈**<u>İSTATİSTİK KOMUTLARI:</u>**
+/activevoice - Bottaki aktif sesli sohbetleri kontrol edin.
+/activevideo - Bottaki etkin görüntülü görüşmeleri kontrol edin.
+/stats - Bot İstatistiklerini Kontrol Et
 
-⚠️**<u>BLACKLIST CHAT FUNCTION:</u>**
-/blacklistchat [CHAT_ID] - Blacklist any chat from using Music Bot
-/whitelistchat [CHAT_ID] - Whitelist any blacklisted chat from using Music Bot
-/blacklistedchat - Check all blacklisted chats.
+⚠️**<u>KARA LİSTE SOHBET İŞLEVİ:</u>**
+/blacklistchat [CHAT_ID] - Müzik Botu kullanan herhangi bir sohbeti kara listeye alın
+/whitelistchat [CHAT_ID] - Kara listeye alınmış herhangi bir sohbeti Music Bot kullanarak beyaz listeye alın
+/blacklistedchat - Kara listedeki tüm sohbetleri kontrol edin.
 
-👤**<u>BLOCKED FUNCTION:</u>**
-/block [Username or Reply to a user] - Prevents a user from using bot commands.
-/unblock [Username or Reply to a user] - Remove a user from Bot's Blocked List.
-/blockedusers - Check blocked Users Lists
+👤**<u>BLOKLANAN İŞLEV:</u>**
+/block [Kullanıcı adı veya Kullanıcıyı yanıtla] - Bir kullanıcının bot komutlarını kullanmasını engeller.
+/unblock [Kullanıcı Adı veya Kullanıcıya Cevap Ver] - Bir kullanıcıyı Bot'un Engellenenler Listesinden kaldırın.
+/blockedusers - Engellenen Kullanıcı Listelerini kontrol edin
 
-👤**<u>GBAN FUNCTION:</u>**
-/gban [Username or Reply to a user] - Gban a user from bot's served chat and stop him from using your bot.
-/ungban [Username or Reply to a user] - Remove a user from Bot's gbanned List and allow him for using your bot
-/gbannedusers - Check Gbanned Users Lists
+👤**<u>GBAN İŞLEVİ:</u>**
+/gban [Kullanıcı adı veya Kullanıcıyı yanıtla] - Bir kullanıcıyı botun sunduğu sohbetten Gbanlayın ve botunuzu kullanmasını engelleyin.
+/ungban [Kullanıcı adı veya Kullanıcıyı yanıtla] - Bir kullanıcıyı Bot'un gbanlı Listesinden çıkarın ve botunuzu kullanmasına izin verin
+/gbannedusers - Gbanlı Kullanıcı Listelerini Kontrol Edin
 
-🎥**<u>VIDEOCALLS FUNCTION:</u>**
-/set_video_limit [Number of Chats] - Set a maximum Number of Chats allowed for Video Calls at a time. Default to 3 chats.
-/videomode [download|m3u8] - If download mode is enabled, Bot will download videos instead of playing them in M3u8 form. ByDefault to M3u8. You can use download mode when any query doesnt plays in m3u8 mode.
+🎥**<u>GÖRÜNTÜLÜ ARAMA İŞLEVİ:</u>**
+/set_video_limit [Sohbet Sayısı] - Bir seferde Görüntülü Aramalar için izin verilen maksimum Sohbet Sayısını ayarlayın. Varsayılan olarak 3 sohbet.
+/videomode [indir|m3u8] - İndirme modu etkinleştirilirse, Bot videoları M3u8 biçiminde oynatmak yerine indirir. Varsayılan olarak M3u8'e. m3u8 modunda herhangi bir sorgu yürütülmediğinde indirme modunu kullanabilirsiniz.
 
-⚡️**<u>PRIVATE BOT FUNCTION:</u>**
-/authorize [CHAT_ID] - Allow a chat for using your bot.
-/unauthorize [CHAT_ID] - Disallow a chat from using your bot.
-/authorized - Check all allowed chats of your bot.
+⚡️**<u>ÖZEL BOT İŞLEVİ:</u>**
+/yetkilendir [CHAT_ID] - Botunuzu kullanmak için bir sohbete izin verin.
+/unauthorize [CHAT_ID] - Bir sohbetin botunuzu kullanmasına izin vermeyin.
+/yetkili - Botunuzun izin verilen tüm sohbetlerini kontrol edin.
 
-🌐**<u>BROADCAST FUNCTION:</u>**
-/broadcast [Message or Reply to a Message] - Broadcast any message to Bot's Served Chats.
+🌐**<u>YAYIN İŞLEVİ:</u>**
+/broadcast [Mesaj veya Mesaja Cevap Ver] - Herhangi bir mesajı Bot'un Sunulan Sohbetlerine yayınlayın.
 
-<u>options for broadcast:</u>
-**-pin** : This will pin your message 
-**-pinloud** : This will pin your message with loud notification
-**-user** : This will broadcast your message to the users who have started your bot.
-**-assistant** : This will broadcast your message from assistant account of your bot.
-**-nobot** : This will force your bot to not broadcast message
+<u>yayın seçenekleri:</u>
+**-pin** : Bu, mesajınızı sabitler
+**-pinloud** : Bu, mesajınızı yüksek sesli bildirimle sabitler
+**-user** : Bu, mesajınızı botunuzu başlatan kullanıcılara yayınlayacaktır.
+**-yardımcı** : Bu, botunuzun yardımcı hesabından mesajınızı yayınlayacaktır.
+**-nobot** : Bu, botunuzu mesaj yayınlamamaya zorlar
 
-**Example:** `/broadcast -user -assistant -pin Hello Testing`
+**Örnek:** `/broadcast -user -assistant -pin Hello Testing`
 
 """
