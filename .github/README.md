@@ -3,6 +3,10 @@
 Telegram sohbet gruplarında hem müzik dinleyebileceğiniz hem de video izleyebileceğiniz müzik botudur.
 Bot tamamen açık kaynak kodludur istediğiniz gibi kullanabilirsiniz.
 
+## DEVELOPER İLETİŞİM
+<b>Telegram:</b> <a href="https://t.me/pikatubee">@pikatubee</a> yada <a href="https://t.me/pikatube">@PikaTube</a> ulaşabilirsiniz
+<b>İnstagram:</b> <a href="https://instagram.com/pikatube">@pikatube</a>
+
 ## 🖇 VPS Deployment
 <code>
 git clone https://github.com/PikaTubee/AmandaMusicBot
