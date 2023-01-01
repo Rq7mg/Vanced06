@@ -1,59 +1,60 @@
-<img src="https://telegra.ph/file/c0e014ff34f34d1056627.png" align="right" width="200" height="200"/>
+<h1>Yeni Nesil Tamamen Türkçe Müzik Botu</h1>
 
-# Yukki Music Bot <img src="https://img.shields.io/github/v/release/TeamYukki/YukkiMusicBot?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
-
-[Yukki Music Bot](https://github.com/TeamYukki/YukkiMusicBot) is a Powerful Telegram Music+Video Bot written in Python using Pyrogram and Py-Tgcalls by which you can stream songs, video and even live streams in your group calls via various sources.
-
-* Youtube, Soundcloud, Apple Music, Spotify, Resso, Live Streams and Telegram Audios & Videos support.
-* Written from scratch, making it stable and less crashes with attractive thumbnails.
-* Loop, Seek, Shuffle, Specific Skip, Playlists etc support
-* Multi-Language support
-
-
-# ⚡️ Getting Started [[Documentation](https://notreallyshikhar.gitbook.io/yukkimusicbot/)]
-
-> The official [documentation site](https://notreallyshikhar.gitbook.io/yukkimusicbot/) contains a lot of information. The best place to start is from the deployment section.
-
-## ⚠️ Heroku / Okteto / Railway
-
-We have temporarily disabled the deployment for  all these cloud service platforms due to security and ban issues. We don't want innocent users who sign up there to be banned from the platform as a result of this deployment. [Read More](https://t.me/TheYukki/2541)
-
-## 🖇 Generating Pyrogram String Session
-
-<p>
-<a href="https://replit.com/@NotReallyShikhar/Yukki-Music-String-Gen"><img src="https://img.shields.io/badge/Generate%20On%20Repl-blueviolet?style=for-the-badge&logo=appveyor" width="200""/></a>
-<a href="https://t.me/YukkiStringBot"><img src="https://img.shields.io/badge/TG%20String%20Gen%20Bot-blueviolet?style=for-the-badge&logo=appveyor" width="200""/></a>
-</p>
+Telegram sohbet gruplarında hem müzik dinleyebileceğiniz hem de video izleyebileceğiniz müzik botudur.
+Bot tamamen açık kaynak kodludur istediğiniz gibi kullanabilirsiniz.
 
 ## 🖇 VPS Deployment
+<code>
+git clone https://github.com/PikaTubee/AmandaMusicBot
+cd AmandaMusicBot
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get install python3-pip ffmpeg -y
+sudo pip3 install -U pip
+curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
+pip3 install -U -r requirements.txt
+cp sample.env .env
+nano .env
+</code>
 
-Checkout [Docs](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/local-hosting-or-vps) for Detailed Explanation on VPS Deploy
+## .env dosyasını VDS'te iken aşağıdaki değerleri kopyalayın ve yapıştırın.
 
+<code>
+API_ID= my.telegram.org adresinden alacaksiniz
+API_HASH= my.telegram.org adresinden alacaksiniz
+BOT_TOKEN= Bot tokeninizi telegramdan @BotFather dan alabilirsiniz
+MONGO_DB_URI= https://www.mongodb.com/ adresinden alacaksiniz.
+LOG_GROUP_ID= sohbet grubu id'si @raw_data_bot tan öğrenebilirsiniz
+MUSIC_BOT_NAME= müzik botunuzun adi
+STRING_SESSION= asistan hesabinin string session almaniz için https://replit.com/@AssadAli/String-Session-Generator
+SPOTIFY_CLIENT_ID = developer.spotify.com adresinden alacaksiniz
+SPOTIFY_CLIENT_SECRET = developer.spotify.com adresinden alacaksiniz
+OWNER_ID = sahip(sizin) kullanici kimliğiniz bunu userinfobot tan ya da herhangi bir gruptan info çekerek öğrenebilirsiniz.
 
-# 🏷 Support / Assistance
+UPSTREAM_REPO = https://github.com/PikaTubee/AmandaMusicBot/
+UPSTREAM_BRAMCH = master
+PRIVATE_BOT_MODE = False
+YOUTUBE_EDIT_SLEEP = 3
+TELEGRAM_EDIT_SLEEP = 5
+AUTO_LEAVING_ASSISTANT = false
+ASSISTANT_LEAVE_TIME = 5400
+</code>
 
-Reach out to the maintainer at one of the following places:
+Nanoda <code>Ctrl+X</code> yaparak hepsine <code>yes</code> yaparak kayıt edip çıkın.
 
-- [GitHub Issues](https://github.com/TeamYukki/yukkimusicbot/issues/new?assignees=&labels=question&template=SUPPORT_QUESTION.md&title=support%3A+)
-- Contact options listed on [this GitHub profile](https://github.com/TeamYukki)
-- [Telegram Support](https://t.me/YukkiSupport)
+## Botu başlatmadan önce yapmaniz gerekenler
+<code>
+screen -S "botunuzunAdi"
+chmod 777 *
+</code>
 
-If you want to say **thank you** or/and support active development of YukkiMusicBot:
+## Bunları yaptıktan sonra;
 
-- Add a [GitHub Star](https://github.com/TeamYukki/YukkiMusicBot) to the project.
-- Fork the Repo :)
-- Write interesting articles about the project on [Dev.to](https://dev.to/), [Medium](https://medium.com/) or your personal blog.
+<code>screen bash start</code> ya da <code>screen ./start</code> yapın.
 
-Together, we can make **YukkiMusicBot** better!
-# 📑 Acknowledgement / Credits
+Botunuz aktif olacaktır.
 
-Special thanks to these amazing projects/people which/who help power Yukki Music Bot:
+## Keyifli dinlemeler 
 
-- [Pyrogram](https://github.com/pyrogram/pyrogram)
-- [Py-Tgcalls](https://github.com/pytgcalls/pytgcalls)
-- [CallsMusic Team](https://github.com/Callsmusic)
-- [TheHamkerCat](https://github.com/TheHamkerCat)
-- [Charon Baglari](https://github.com/XCBv021)
+## DİKKAT!
 
-
-Reminder that you are great, you are enough, and your presence is valued. If you are struggling with your mental health, please reach out to someone you love and consult a professional.
+Botunuzu ve asistaninizi açtığınız log grubunda tam yetki vermezseniz ve sesli sohbeti açık bırakmazsanız çalışmaz!
