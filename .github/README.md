@@ -19,6 +19,12 @@ pip3 install -U -r requirements.txt
 cp sample.env .env
 nano .env
 </code>
+## nodejs sürüm düşük hatası alıyorsanız aşağıdaki komutları uygulayın.
+<code>
+ sudo npm cache clean -f
+ sudo npm install -g n
+ sudo n stable
+</code>
 
 ## .env dosyasını VDS'te iken aşağıdaki değerleri kopyalayın ve yapıştırın.
 
