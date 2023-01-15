@@ -34,7 +34,7 @@ SPOTIFY_CLIENT_ID = developer.spotify.com adresinden alacaksiniz
 SPOTIFY_CLIENT_SECRET = developer.spotify.com adresinden alacaksiniz
 OWNER_ID = sahip(sizin) kullanici kimliğiniz bunu userinfobot tan ya da herhangi bir gruptan info çekerek öğrenebilirsiniz.
 
-UPSTREAM_REPO = https://github.com/PikaTubee/AmandaMusicBot/
+UPSTREAM_REPO = https://github.com/atom245/AmandaMusicBot
 UPSTREAM_BRAMCH = master
 PRIVATE_BOT_MODE = False
 YOUTUBE_EDIT_SLEEP = 3
