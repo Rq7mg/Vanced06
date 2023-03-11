@@ -14,14 +14,16 @@ cd AmandaMusicBot
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install python3-pip ffmpeg -y
 sudo pip3 install -U pip
-curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
+curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm #bunu yapmadan önce node.js kurulumu yapın
 pip3 install -U -r requirements.txt
 cp sample.env .env
 nano .env
 </code>
 
-## nodejs sürüm düşük hatası alıyorsanız aşağıdaki komutları uygulayın.
+## nodejs kurulumu sürüm düşük hatası alıyorsanız aşağıdaki komutları uygulayın.
 <code>
+ sudo apt install nodejs
+ sudo apt install npm
  sudo npm cache clean -f
  sudo npm install -g n
  sudo n stable
