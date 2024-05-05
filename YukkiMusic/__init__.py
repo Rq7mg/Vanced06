@@ -32,7 +32,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = YukkiBot()
+app = YukkiMusic()
 
 # Assistant Client
 userbot = Userbot()
