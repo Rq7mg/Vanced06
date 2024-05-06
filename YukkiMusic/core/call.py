@@ -8,14 +8,14 @@ from pyrogram.errors import (ChatAdminRequired,
                              UserAlreadyParticipant,
                              UserNotParticipant)
 from pyrogram.types import InlineKeyboardMarkup
-from pytgcalls import PyTgCalls
-from pytgcalls import (AlreadyJoinedError,
+from pytgcalls import PyTgCalls, StreamType
+from pytgcalls.exceptions import (AlreadyJoinedError,
                                   NoActiveGroupCall,
                                   TelegramServerError)
 from pytgcalls.types import (JoinedGroupCallParticipant,
                              LeftGroupCallParticipant, Update)
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
-from pytgcalls.types.stream import StreamAudioEnded, StreamType
+from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
@@ -40,7 +40,6 @@ from YukkiMusic.utils.thumbnails import gen_thumb
 autoend = {}
 counter = {}
 AUTO_END_TIME = 3
-
 
 async def _clear_(chat_id):
     db[chat_id] = []
