@@ -13,7 +13,6 @@ from datetime import datetime, timedelta
 from typing import Union
 
 from pyrogram import Client
-from pyrogram.enums import ChatMemberStatus
 from pyrogram.errors import (ChatAdminRequired,
                              UserAlreadyParticipant,
                              UserNotParticipant)
