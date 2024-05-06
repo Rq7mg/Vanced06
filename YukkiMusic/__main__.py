@@ -1,5 +1,4 @@
 
-
 import asyncio
 import importlib
 import sys
@@ -14,7 +13,8 @@ from YukkiMusic.core.call import Yukki
 from YukkiMusic.plugins import ALL_MODULES
 from YukkiMusic.utils.database import get_banned_users, get_gbanned
 
-loop = asyncio.get_event_loop_policy().get_event_loop()
+loop = asyncio.get_event_loop()
+
 
 async def init():
     if (
@@ -47,13 +47,13 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("YukkiMusic.plugins" + all_module)
-    LOGGER("YukkiMusic.plugins").info(
+    LOGGER("Yukkimusic.plugins").info(
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await YukkiMusic.start()
+    await Yukki.start()
     try:
-        await YukkiMusic.stream_call(
+        await Yukki.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
@@ -63,11 +63,11 @@ async def init():
         sys.exit()
     except:
         pass
-    await YukkiMusic.decorators()
-    LOGGER("YukkiMusic").info("Music Bot Started Successfully")
+    await Yukki.decorators()
+    LOGGER("YukkiMusic").info("Yukki Music Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("YukkiMusic").info("Stopping Music Bot! GoodBye")
+    LOGGER("YukkiMusic").info("Stopping Yukki Music Bot! GoodBye")
