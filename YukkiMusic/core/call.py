@@ -12,7 +12,7 @@ import asyncio
 from datetime import datetime, timedelta
 from typing import Union
 
-from pyrogram import Client
+from pyrogram import Client, YukkiMusic
 from pyrogram.errors import (ChatAdminRequired,
                              UserAlreadyParticipant,
                              UserNotParticipant)
