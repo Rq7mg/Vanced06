@@ -70,7 +70,7 @@ UPSTREAM_REPO = getenv(
 
     "UPSTREAM_REPO",
 
-    "https://github.com/Meyit47zade/Tcx",
+    "https://github.com/Meyit47zade/Tcx2",
 
 )
 
