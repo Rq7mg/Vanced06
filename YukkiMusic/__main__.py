@@ -1,4 +1,5 @@
 
+
 import asyncio
 import importlib
 import sys
@@ -9,7 +10,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from YukkiMusic import LOGGER, app, userbot
-from YukkiMusic.core.call import YukkiBot
+from YukkiMusic.core.call import YukkiMusic
 from YukkiMusic.plugins import ALL_MODULES
 from YukkiMusic.utils.database import get_banned_users, get_gbanned
 
@@ -45,12 +46,12 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("ArchMusic.plugins" + all_module)
+        importlib.import_module("YukkiMusic.plugins" + all_module)
     LOGGER("YukkiMusic.plugins").info(
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await YukkiBot.start()
+    await YukkiMusic.start()
     try:
         await YukkiMusic.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
