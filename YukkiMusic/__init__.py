@@ -11,7 +11,7 @@
 from YukkiMusic.core.bot import YukkiMusic
 from YukkiMusic.core.dir import dirr
 from YukkiMusic.core.git import git
-from YukkiMusic.core.userbot import Userbot
+from YukkiMusic.core.userbot import userbot
 from YukkiMusic.misc import dbb, heroku, sudo
 
 from .logging import LOGGER
@@ -35,7 +35,7 @@ sudo()
 app = YukkiMusic()
 
 # Assistant Client
-YukkiMusic = Userbot()
+YukkiMusic = userbot()
 
 from .platforms import *
 
