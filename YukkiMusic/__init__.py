@@ -35,7 +35,7 @@ sudo()
 app = YukkiMusic()
 
 # Assistant Client
-YukkiMusic = UserBot()
+YukkiMusic = userbot()
 
 from .platforms import *
 
