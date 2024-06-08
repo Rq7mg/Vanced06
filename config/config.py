@@ -42,7 +42,7 @@ SONG_DOWNLOAD_DURATION = int(
 
 # You'll need a Private Group ID for this.
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002119401642"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002235377494"))
 
 # A name for your Music bot.
 
@@ -84,11 +84,11 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv(
 
-    "SUPPORT_CHANNEL", "https://t.me/MytRefBot") # Example:- https://t.me/ArchBots
+    "SUPPORT_CHANNEL", "https://t.me/Meyitzade") # Example:- https://t.me/ArchBots
 
 SUPPORT_GROUP = getenv(
 
-    "SUPPORT_GROUP", "https://t.me/S1F1RB1RCHAT")  # Example:- https://t.me/ARCH_SUPPORTS
+    "SUPPORT_GROUP", "https://t.me/Meyitzade")  # Example:- https://t.me/ARCH_SUPPORTS
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 
@@ -184,7 +184,7 @@ SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 
-STRING1 = getenv("STRING_SESSION", "BAGbSM0AVNfkcDhD1Ywy9H9RpUsq2vR-M3D0PFr_rSUe8EdejcNA7k3nHRTwrFhBd9CO6ppdlGBG6Khkbn4EjUCruD7CFpqYGTJdY3Vdb8EWViL1SClwc5_eoT44x6bgvLoKfWD7L2IJdOqLjl_WvKwHSUOALuERVVN-W3tYg0lUYS0zxxn_I0ic10ToxV1lii-WVQTHbp-GE7RaM7Pter9k2RdAkONMtI1Ey2hhZQKZxbW0APnJ1nFsFrqV0sX2NakjcmovtIeuRpML5-2uNcRW98SEivr94G7hP214iyphhZuO6m5s5oGVwH0QRlJXwQAXfK-3NXODEMKfg9LaePy2x3k4BQAAAAGD4cIEAA")
+STRING1 = getenv("STRING_SESSION", "BAGbSM0AvIxEyQAAO5ZSViRz7LTStxsZw0773Q1QrGPfvw7gzHpfAFdHlAusxquqE4SiNKDCrujvrV_dSkbtHm2zTkHhGfeEBpgGAWVP7RUTXqgubkuhTcA_VU7dGahwtQXSYW1pAnYFD-nO_A5fQkEBQqMKWLfg3RtJEAoIBmVyavmKufITi4QEgv0_PzSowrgCxA8Rap9Hnhx2BD5u3nIsjsP1N1Iw25Tw7IF9sAjJ1-NTiLT6y0MTfvUXqzleSuq3_0EAC8_WnAnOjBP9fAfqKDHAxTcT1HmgZhWHL75upiT-ySAOiDXqiJDuAjntzSbyBk2pMN0efENeR8vIDSnpo2aGFAAAAAGD4cIEAA")
 
 STRING2 = getenv("STRING_SESSION2", None)
 
