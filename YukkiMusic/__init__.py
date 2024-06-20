@@ -1,17 +1,16 @@
 #
-# Copyright (C) 2021-2023 by ArchBots@Github, < https://github.com/ArchBots >.
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
 #
-# This file is part of < https://github.com/ArchBots/ArchMusic > project,
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/ArchBots/ArchMusic/blob/master/LICENSE >
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
 #
 # All rights reserved.
-#
 
-from YukkiMusic.core.bot import YukkiMusic
+from YukkiMusic.core.bot import YukkiBot
 from YukkiMusic.core.dir import dirr
 from YukkiMusic.core.git import git
-from YukkiMusic.core.userbot import userbot
+from YukkiMusic.core.userbot import Userbot
 from YukkiMusic.misc import dbb, heroku, sudo
 
 from .logging import LOGGER
@@ -32,10 +31,10 @@ heroku()
 sudo()
 
 # Bot Client
-app = YukkiMusic()
+app = YukkiBot()
 
 # Assistant Client
-YukkiMusic = userbot()
+userbot = Userbot()
 
 from .platforms import *
 
