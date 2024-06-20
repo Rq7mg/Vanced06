@@ -12,13 +12,13 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", "26953933"))
+API_ID = int(getenv("API_ID", 28920866))
 
-API_HASH = getenv("API_HASH", "4bc2a58e7308a9da35bae33f68691d74")
+API_HASH = getenv("API_HASH", "833ed2af149085968fff77d2fd843f51")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "7203169161:AAFE9lD7nnCMYNqiY3P-g0d2RoAp5H3fYC8")
+BOT_TOKEN = getenv("BOT_TOKEN", "6058282484:AAGnSHnhPw3YGaWBYolnhjR0uXvkHObmCpA")
 
 # Database to save your chats and stats.
 
@@ -46,13 +46,13 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002235377494"))
 
 # A name for your Music bot.
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","MytGrupBot")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME","Vanced Music Bot")
 
 # Your User ID.
 
 OWNER_ID = list(
 
-    map(int, getenv("OWNER_ID", "6510559004").split())
+    map(int, getenv("OWNER_ID", "6563936773").split())
 
 )  # Input type must be interger
 
@@ -70,7 +70,7 @@ UPSTREAM_REPO = getenv(
 
     "UPSTREAM_REPO",
 
-    "https://github.com/Meyit47zade/Tcx2",
+    "https://github.com/Rq7mg/Vanced06",
 
 )
 
@@ -84,11 +84,11 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv(
 
-    "SUPPORT_CHANNEL", "https://t.me/Meyitzade") # Example:- https://t.me/ArchBots
+    "SUPPORT_CHANNEL", "https://t.me/kycmuzik") # Example:- https://t.me/ArchBots
 
 SUPPORT_GROUP = getenv(
 
-    "SUPPORT_GROUP", "https://t.me/Meyitzade")  # Example:- https://t.me/ARCH_SUPPORTS
+    "SUPPORT_GROUP", "https://t.me/kiyicitayfaa")  # Example:- https://t.me/ARCH_SUPPORTS
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 
@@ -184,7 +184,7 @@ SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 
-STRING1 = getenv("STRING_SESSION", "BAGbSM0AvIxEyQAAO5ZSViRz7LTStxsZw0773Q1QrGPfvw7gzHpfAFdHlAusxquqE4SiNKDCrujvrV_dSkbtHm2zTkHhGfeEBpgGAWVP7RUTXqgubkuhTcA_VU7dGahwtQXSYW1pAnYFD-nO_A5fQkEBQqMKWLfg3RtJEAoIBmVyavmKufITi4QEgv0_PzSowrgCxA8Rap9Hnhx2BD5u3nIsjsP1N1Iw25Tw7IF9sAjJ1-NTiLT6y0MTfvUXqzleSuq3_0EAC8_WnAnOjBP9fAfqKDHAxTcT1HmgZhWHL75upiT-ySAOiDXqiJDuAjntzSbyBk2pMN0efENeR8vIDSnpo2aGFAAAAAGD4cIEAA")
+STRING1 = getenv("STRING_SESSION", "BAG5TCIAb_67s4es8vcq-1t2T7v_ipUKmeaHA0q-LUy5k0NMcj3RsMcKpYFboFHobtWuXLdUZ6PVFJaeySWpyna2MnipqiJdOKxa6IzLpP0SirjXHN0ugXppqhZlV-kHQCxPqJZ9S0jxOOjjoxoktHwo8-H3aI6DMeF2TKmTp1RnCdNXOzeNeD_Aq37NhUFADflccp5yt368I1JD4XUI5mGg86UGMXvMF5sTb0MNxzLETMlf8V41OicTFn75PzXv_kZr8amH1FL-6LNipS7exd6KADRTRDcR9KXA52B08xq60-p7hl564n2V5Fmw9dontiTKXwiRaCH6lncubX_R-7uSVWDyJgAAAAGXGGzwAA")
 
 STRING2 = getenv("STRING_SESSION2", None)
 
