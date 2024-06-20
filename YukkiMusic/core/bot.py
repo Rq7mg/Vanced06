@@ -7,7 +7,7 @@ import config
 
 from ..logging import LOGGER
 
-class YukkiBot(Client):
+class YukkiMusic(Client):
     def init(self):
         LOGGER(name).info(f"Starting Bot")
         super().init(
