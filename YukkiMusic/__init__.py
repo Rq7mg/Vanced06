@@ -34,7 +34,7 @@ sudo()
 app = YukkiBot()
 
 # Assistant Client
-userbot = Userbot()
+YukkiBot = Userbot()
 
 from .platforms import *
 
