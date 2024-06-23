@@ -15,62 +15,62 @@
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "28920866",
+        "value": "",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "833ed2af149085968fff77d2fd843f51",
+        "value": "",
         "required": true
       },
       "AUTO_LEAVING_ASSISTANT": {
         "description": "If you want your assistant to leave all chats automatically after some time.",
-        "value": "True",
+        "value": "false",
         "required": false
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "6058282484:AAGnSHnhPw3YGaWBYolnhjR0uXvkHObmCpA",
+        "value": "",
         "required": true
       },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
-        "value": "mongodb+srv://mongoguess:guessmongo@cluster0.zcwklzz.mongodb.net/?retryWrites=true&w=majority",
+        "value": "",
         "required": true
       },
       "MUSIC_BOT_NAME": {
         "description": "A name for your Music Bot. Please don't use ascii characters",
-        "value": "Vanced Music Bot",
+        "value": "",
         "required": true
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "6563936773",
+        "value": "",
         "required": true
       },
       "STRING_SESSION": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
-        "value": "BACOl0flWi7xy5a-_XJQ0xAfYhXWjD9Qw4Sp47ManjJIJ13W0zBCepBIXMn0y-Lglq_2R4OJiFh9oJxxnkru4rvMo64JQioQq-spjiicE8qX_e2zbKTn5kYBdXLQQtleVGd9DbIXBj5MajKdEpDN-acHh1Cf8-IEoBsEIqXhYlx-HJrgu9bFnuEig3uuSzFYPnNYTA_BP-b8l9w1UER562sIM7RyTlr8JuVCmSdfuTYCreRMbIIrPEr3FCpF-TKzUX57rezQ4R-g2eqMUCAUHTf4HwUvLS_OxG-2gR3E4Is5wa0znYwwrs1P8ShQxIkfKhlNN0R2yT2lifqGH3KlpBHdAAAAAZcYbPAA",
+        "value": "",
         "required": true
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku account's API key",
-        "value": "HRKU-0a573a2c-23ca-42a8-967b-b63032aeb6a9",
+        "value": "",
         "required": true
       },
       "HEROKU_APP_NAME": {
         "description": "Your heroku app/bot's name",
-        "value": "vancedm",
+        "value": "",
         "required": true
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "-1002159822042",
+        "value": "",
         "required": true
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/Rq7mg/Vanced06",
+        "value": "",
         "required": true
       },
       "UPSTREAM_BRANCH": {
